@@ -3,7 +3,8 @@
 This is a cover of assignment 2 from Dave Churchills 4th year computer science course in gameplay programming. As it is self taught, I did not have access to the substantial skeleton code he provides his university students and so made the entire project from scratch (lots of freeze framing on his videos to type out sections of his skeleton code). Overall I liked this, I believe it gave me a deeper understanding of C++, for example by making me research topics such as the compilation process (preprocessing, compilation, linking) and the proper use of header files. However, it did add substantial time to the length of the project and so in the interest of getting a job the code is not as neat/efficient as I would like.
 
 # Concepts it introduces
-- ECS design pattern -> really interesting alternative to OO design that prevents inhertiance complications down the line and gives the programmer/designer a lot of freedom (e.g. by how easy it is to add/remove components). Made my own entity manager class which followed the factory pattern. 
+
+- ECS design pattern -> really interesting alternative to OO design that prevents inhertiance complications down the line and gives the programmer/designer a lot of freedom (e.g. by how easy it is to add/remove components). Made my own entity manager class which followed the factory pattern.
 
 - RAII -> still a bit shaky on this, in this instance I took it to mean encapsulating every resource used within a class, thus the lifetime of each resource is bound to the lifetime of the object that contains it. Every resource class' destructor will be used to free the resource that is allocated upon resource initialisation. In this project, we used shared pointers for this, which keep a count of how many different scopes have access to them and destruct when it reaches 0.
 
@@ -30,3 +31,7 @@ This is a cover of assignment 2 from Dave Churchills 4th year computer science c
 - Code neatness -> Due to time constraints I would like at some point to go over this code base and fix the no doubt numerous memory leaks and useless if statements. At some point...
 
 - Game understanding -> by not having access to the official skeleton code of the project I ended up altering the order of some of the systems in the game loop. I am still not 100% sure this didn't introduce logical inconsistencies in the game.
+
+# Notes
+
+To build it, you need to install SFML version 2.5+ and Dear ImGui to your system (and make if you dont already have it) and then use the makefile provided. May need adjustments, was coded on Debian and worked with g++ there.
