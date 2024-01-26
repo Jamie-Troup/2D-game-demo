@@ -1,5 +1,7 @@
 # 2D-game-demo
 
+![Screenshot from 2024-01-26 00-10-46](https://github.com/Jamie-Troup/2D-game-demo/assets/150353016/4dd45f8f-663e-42aa-9ce5-98eb184114c7)
+
 This is a cover of assignment 2 from Dave Churchills 4th year computer science course in gameplay programming. As it is self taught, I did not have access to the substantial skeleton code he provides his university students and so made the entire project from scratch (lots of freeze framing on his videos to type out sections of his skeleton code). Overall I liked this, I believe it gave me a deeper understanding of C++, for example by making me research topics such as the compilation process (preprocessing, compilation, linking) and the proper use of header files. However, it did add substantial time to the length of the project and so in the interest of getting a job the code is not as neat/efficient as I would like.
 
 # Concepts it introduces
