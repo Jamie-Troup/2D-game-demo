@@ -25,6 +25,8 @@ A project based off Dave Churchill's 4th year computer science course in C++ pro
 - Scene mangager
 
 - Audio & Textures
+
+- Animation
   
 # If you want to try it
 
