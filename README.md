@@ -20,7 +20,7 @@ A project based off Dave Churchill's 4th year computer science course in C++ pro
 
 - Operator overloading, Templates/generics, More SFML
 
-# Things to improve on
+# Things to add (apart from the TODOs in code)
 
 - Scene mangager
 
