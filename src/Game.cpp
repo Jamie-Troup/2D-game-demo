@@ -645,7 +645,7 @@ void Game::sCollision()
 						{
 							if (entity->tag() == "enemy")
 							{
-								infect(entity);
+								infectTarget(entity);
 								small_good->destroy();						
 							}
 							else
@@ -671,7 +671,7 @@ void Game::sCollision()
 				
 					if (intersects(pos_a, pos_b, coll_rad_a, coll_rad_b))
 					{
-						infect(entity);
+						infectTarget(entity);
 						special_bull->destroy();
 						break;
 					}
@@ -681,7 +681,7 @@ void Game::sCollision()
 	}
 }
 
-void Game::infect(std::shared_ptr<Entity> target)
+void Game::infectTarget(std::shared_ptr<Entity> target)
 {
 	target->cInfected = std::make_shared<CInfected>(120);
 	target->cShape->circle.setFillColor(sf::Color(255, 255, 255));
@@ -773,9 +773,9 @@ void Game::sGui()
 				for (auto [tag, entityVec] : m_entities.getEntityMap())
 				{
 					if (ImGui::CollapsingHeader(tag.c_str()))
-     	    		{
+					{
             			if (ImGui::BeginTable("table2", 4))
-						{
+            			{
 							for (auto entity : entityVec)
 							{
 								destroyID++;
@@ -804,19 +804,19 @@ void Game::sGui()
 										case 3:
 											auto pos = entity->cTransform->pos;
 											ImGui::Text("(%f, %f)", pos.x, pos.y);
-											break;	
+											break;
 									}
 								}
 							}
 							ImGui::EndTable();
 						}
-       	    		}
-				}	
-       	    }
+					}
+				}
+			}
             ImGui::EndTabItem();
-        }
+		}
         ImGui::EndTabBar();
-    }
+	}
 	
 	ImGui::End();
 	ImGui::EndFrame();
