@@ -58,7 +58,7 @@ public:
 	 
 	void spawnEnemy(bool small_enemy = false, const std::string& type = "bad", std::shared_ptr<Entity> parent = nullptr);
 	void buildEnemy(std::shared_ptr<Entity> enemy, float coll_rad, Vec2& pos, Vec2& vel, float angle, float radius, int num_sides, sf::Color& col, sf::Color& out_col, float out_thick);
-	void infect(std::shared_ptr<Entity>);
+	void infectTarget(std::shared_ptr<Entity> target);
 	
 	bool spawnCollision(Vec2& pos_a, float coll_rad_a);
 	bool intersects(Vec2 pos_a, Vec2 pos_b, float coll_rad_a, float coll_rad_b);
