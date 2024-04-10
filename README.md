@@ -2,7 +2,7 @@
 
 ![Screenshot from 2024-01-26 00-10-46](https://github.com/Jamie-Troup/2D-game-demo/assets/150353016/4dd45f8f-663e-42aa-9ce5-98eb184114c7)
 
-__Demo video__ -> https://jamie-troup.github.io/2D-game-demo/
+__Demo video (older version)__ -> https://jamie-troup.github.io/2D-game-demo/
 
 A project based off Dave Churchill's 4th year computer science course in C++ programming.
 
